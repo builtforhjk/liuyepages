@@ -59,7 +59,7 @@ var idx = 0;
 		});
 			
 		function fireThis() {
-			if(isOn === 12) return;
+			if(isOn === 4) return;
 				(isOn < 3) ? isOn++ : isOn = 2;
 				
 				switch(isOn) {
@@ -78,42 +78,6 @@ var idx = 0;
 						sets = {animation: 1, animationType: "out", restoreHTML: false};
 					break;
 
-					case 4:
-						fx.html("文字效果2：js代码(www.jsdaima.com)是IT资源下载与IT技能学习平台。");
-						sets = {animation: 11};
-					break;
-					
-					case 5:
-						sets = {animation: 11, animationType: "out", restoreHTML: false};
-					break;
-
-					case 6:
-						fx.html("文字效果3：js代码(www.jsdaima.com)是IT资源下载与IT技能学习平台。");
-						sets = {animation: 6, backwards: true};
-					break;
-					
-					case 7:
-						sets = {animation: 4, animationType: "out", backwards: true, restoreHTML: false};
-					break;
-					
-					case 8:
-						fx.html("文字效果4：js代码(www.jsdaima.com)是IT资源下载与IT技能学习平台。");
-						sets = {animation: 2, easing: "easeOutBounce"};
-					break;
-					
-					case 9:
-						sets = {animation: 2, animationType: "out", speed: 500, easing: "easeInBack", restoreHTML: false};
-					break;
-					
-					case 10:
-						fx.html("文字效果5：js代码(www.jsdaima.com)是IT资源下载与IT技能学习平台。");
-						sets = {animation: 14, startDelay: 1000, easing: "easeInBack", restoreHTML: false};
-					break;
-					
-					case 11:
-						sets = {animation: 6, animationType: "out", speed: 500, easing: "easeInBack", restoreHTML: false};
-					break;
-					
 						
 			   	    default :
 					break;
@@ -121,6 +85,7 @@ var idx = 0;
 
 				}
 			jQuery.cjTextFx.animate(toAnimate, sets);
+			if(idx == text.length) return;
 		}
 
 })(jQuery);
