@@ -76,6 +76,7 @@ var idx = 0;
 					
 					case 3:
 						sets = {animation: 1, animationType: "out", restoreHTML: false};
+						if(idx == text.length) return;
 					break;
 
 						
@@ -85,7 +86,6 @@ var idx = 0;
 
 				}
 			jQuery.cjTextFx.animate(toAnimate, sets);
-			if(idx == text.length) return;
 		}
 
 })(jQuery);
